@@ -43,10 +43,10 @@
 								}
 							}'
                                         ));
-                                        echo CHtml::link('<i class="fa fa-pencil"></i>', array('//linklist/linklist/editCategory', 'category_id' => $category->id, Yii::app()->getController()->guidParamName => Yii::app()->getController()->contentContainer->guid), array('title' => 'Edit Category', 'class' => 'btn btn-xs btn-primary')). ' ';
+                                        echo CHtml::link('<i class="fa fa-pencil"></i>', array('//linklist/linklist/editCategory', 'category_id' => $category->id, Yii::app()->getController()->guidParamName => Yii::app()->getController()->contentContainer->guid), array('title' =>  Yii::t('LinklistModule.base', 'Edit category') , 'class' => 'btn btn-xs btn-primary')). ' ';
                                     }
                                     // all users may add a link to an existing category
-                                    echo CHtml::link('<i class="fa fa-plus" style="font-size: 12px;"></i> Add link', array('//linklist/linklist/editLink', 'link_id' => -1, 'category_id' => $category->id, Yii::app()->getController()->guidParamName => Yii::app()->getController()->contentContainer->guid), array('title' => 'Add Link', 'class' => 'btn btn-xs btn-info')); ?>
+                                    echo CHtml::link('<i class="fa fa-plus" style="font-size: 12px;"></i> '.  Yii::t('LinklistModule.base', 'Add link') , array('//linklist/linklist/editLink', 'link_id' => -1, 'category_id' => $category->id, Yii::app()->getController()->guidParamName => Yii::app()->getController()->contentContainer->guid), array('title' => 'Add Link', 'class' => 'btn btn-xs btn-info')); ?>
                                 </div>
                             <?php } ?>
                         </div>
@@ -116,6 +116,6 @@
                 $this->widget('application.widgets.ReorderContentWidget', array('containerClassName' => 'linklist-categories', 'sortableItemClassName' => 'panel-linklist-category', 'url' => Yii::app()->createUrl('//linklist/linklist/reorderCategories'), 'additionalAjaxParams' => array(Yii::app()->getController()->guidParamName => Yii::app()->getController()->contentContainer->guid)));
                 ?>
                  <div
-                    class="linklist-add-category linklist-editable"><?php echo CHtml::link('Add Category', array('//linklist/linklist/editCategory', 'category_id' => -1, Yii::app()->getController()->guidParamName => Yii::app()->getController()->contentContainer->guid), array('class' => 'btn btn-primary')); ?></div>
+                    class="linklist-add-category linklist-editable"><?php echo CHtml::link( Yii::t('LinklistModule.base', 'Add Category') , array('//linklist/linklist/editCategory', 'category_id' => -1, Yii::app()->getController()->guidParamName => Yii::app()->getController()->contentContainer->guid), array('class' => 'btn btn-primary')); ?></div>
             <?php } ?>
         <?php } ?>
