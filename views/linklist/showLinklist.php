@@ -92,7 +92,7 @@
 											}
 										}'
                                                     ));
-                                                    echo CHtml::link('<i class="fa fa-pencil"></i>', array('//linklist/linklist/editLink', 'link_id' => $link->id, 'category_id' => $category->id, Yii::app()->getController()->guidParamName => Yii::app()->getController()->contentContainer->guid), array('title' => 'Edit Link', 'class' => 'btn btn-xs btn-primary')). ' '; ?>
+                                                    echo CHtml::link('<i class="fa fa-pencil"></i>', array('//linklist/linklist/editLink', 'link_id' => $link->id, 'category_id' => $category->id, Yii::app()->getController()->guidParamName => Yii::app()->getController()->contentContainer->guid), array('title' => Yii::t('LinklistModule.base', 'Edit Link') , 'class' => 'btn btn-xs btn-primary')). ' '; ?>
                                                 </div>
                                             <?php } ?>
                                         </li>
