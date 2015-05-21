@@ -26,7 +26,7 @@
 
 	    <div class="form-group">
 	        <?php //echo $form->labelEx($category, 'title'); ?>
-	        <?php echo $form->textField($category, 'title', array('class' => 'form-control'),'placeholder' => Yii::t('LinklistModule.base', 'Title') )     ); ?>
+	        <?php echo $form->textField($category, 'title', array('class' => 'form-control', 'placeholder' => Yii::t('LinklistModule.base', 'Title') )     ); ?>
 
 	        <?php echo $form->error($category, 'title'); ?>
 	    </div>
