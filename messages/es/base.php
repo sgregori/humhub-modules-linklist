@@ -1,5 +1,14 @@
 <?php
 return array (
+  'Create new Category' => 'Crear nueva categoria',
+  'Sort Order' => 'Orden de aparición',
+  'Description' => 'Descripción',
+  'Create new Link' => 'Crear nuevo link',
+  'Edit Link' => 'Editar link',
+  'Add link' => 'Añadir link',
+  'Edit category' => 'Editar categoria',
+  'Title' => 'Titulo',
+  'Add Category' => 'Añadir categoria',
   '<strong>Confirm</strong> category deleting' => '<strong>Confirmar</strong> borrado de la categoría',
   '<strong>Confirm</strong> link deleting' => '<strong>Confirmar</strong> borrado del enlace',
   'Back to modules' => 'Volver a módulos',
