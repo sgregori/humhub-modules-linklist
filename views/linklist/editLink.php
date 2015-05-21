@@ -48,7 +48,7 @@
 	        <?php echo $form->error($link, 'sort_order'); ?>
 	    </div>
 	    
-        <?php echo CHtml::submitButton('Save', array('class' => 'btn btn-primary')); ?>
+        <?php echo CHtml::submitButton( Yii::t('LinklistModule.base', 'Save') , array('class' => 'btn btn-primary')); ?>
 
         <?php $this->endWidget(); ?>
     </div>
