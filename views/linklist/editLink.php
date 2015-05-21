@@ -14,9 +14,9 @@
 <div class="panel panel-default">
     <div class="panel-body">
     	<?php if($isCreated) { ?>
-    	<p>Create new Link</p>
+    	<p><?php echo Yii::t('LinklistModule.base', 'Create new Link'); ?></p>
     	<?php } else { ?>
-    	<p>Edit Link</p>	
+    	<p><?php echo Yii::t('LinklistModule.base', 'Edit Link'); ?></p>	
 		<?php }
         $form = $this->beginWidget('CActiveForm', array(
             'id' => 'link-edit-form',
